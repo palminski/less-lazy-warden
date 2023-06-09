@@ -1,4 +1,40 @@
+import { useState } from "react"
+
 const ReferralForm = () => {
+
+    const [formState, setFormState] = useState(
+        {
+            date: "",
+            time: "",
+            studentName: "",
+            grade: "",
+            staffName:"",
+            majorMinor: "",
+            offense: "",
+            consequence1: "",
+            consequence2: "",
+            consequence3: "",
+            consequence4: "",
+            consequence5: "",
+            location: "",
+            motivation: "",
+            others: "",
+            notes: "",
+            hateSymbol: "",
+        }
+    )
+    const handleFormChange = (event) => {
+        const {name,value} = event.target;
+        setFormState({
+            ...formState,
+            [name]:value
+        });
+    };
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        console.log(formState);
+    }
 
     return (
         <form>
@@ -84,7 +120,7 @@ const ReferralForm = () => {
             <input id="copy" type="checkbox" />
             <br />
             <br />
-            
+
             <button>Submit</button>
         </form>
     )
