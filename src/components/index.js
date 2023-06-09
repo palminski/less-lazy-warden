@@ -1,5 +1,7 @@
-import Nav from "./Nav"
+import Nav from "./Nav";
+import ReferralForm from "./ReferralForm";
 
 export {
-    Nav
+    Nav,
+    ReferralForm,
 }
