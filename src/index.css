@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  background-color: rgb(97, 102, 102);
+  margin: 0;
+  padding: 15px;
+  color: aliceblue;
+}
+
+form {
+  display: block !important;
+  background-color: rgb(116, 122, 122);
+  margin: 0;
+}
